@@ -154,7 +154,7 @@ export default function TaskManagementPage() {
             const { data, error: supabaseError } = await supabase.getMyTodoList(1, 100, 'created_at', filter);
 
             if (supabaseError) throw supabaseError;
-            setTasks(data || []);
+            setTasks((data as any[]) || []);
         } catch (err) {
             setError('Failed to load tasks');
             console.error('Error loading tasks:', err);
