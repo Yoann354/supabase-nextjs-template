@@ -29,6 +29,9 @@
     "recharts": "^2.15.0",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7"
+    "@supabase/auth-ui-react": "0.4.7",
+    "@supabase/auth-ui-shared": "0.1.8",
+    "@supabase/supabase-js": "2.45.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
